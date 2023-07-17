@@ -44,7 +44,7 @@ Blockchain.prototype.createNewTransaction =
     this.pendingTransactions.push(newTransaction);
     //THIS RETURNS THE NUMBER OF BLOCK THAT OUT NEW TRANSACTION
     //HAS BEEN PUSHED INTO
-    return this.getLastBlock["index"] + 1;
+    return this.getLastBlock()["index"] + 1;
   };
 
 Blockchain.prototype.hashBlock = function (
